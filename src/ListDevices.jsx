@@ -45,9 +45,9 @@ class ListDevice extends Component {
                     <Typography gutterBottom variant="h4" component="h2">Total subscribers: {this.state.totalCount}</Typography>
                     <Typography variant="body2" color="textPrimary" component="p">
                         {this.state.players.map(el => <div style={{ border: "2px solid gray" }} key={el.id}>
-                            <p>ip:{el.ip}</p>
-                            <p>deviceType:{el.device_type}</p>
-                            <p>os:{el.device_os}</p>
+                            <p>ip: {el.ip}</p>
+                            <p>device model: {el.device_model}</p>
+                            <p>os: {el.device_os}</p>
                             <br />
                         </div>)}
                     </Typography>
